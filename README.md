@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This Ionic PWA is based on the article [Using Firebase and AngularFire2 in an Ionic Real-Time TODO application](https://www.javascripttuts.com/using-firebase-and-angularfire2-in-an-ionic-real-time-todo-application/), this repo properly sets-up [home.pages.ts](<./ionic-todo-firebase/src/app/home/home.pages.ts>) which has changed since the article was published.
+This Ionic PWA is based on the article [Using Firebase and AngularFire2 in an Ionic Real-Time TODO application](https://www.javascripttuts.com/using-firebase-and-angularfire2-in-an-ionic-real-time-todo-application/), this repo properly sets-up [home.pages.ts](<./ionic-todo-firebase/src/app/home/home.page.ts>) which has changed since the article was published.
 
 ## generating the app
 ```
