@@ -32,3 +32,6 @@ $RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+
+# git-secrets
+src/environments/environment.ts
