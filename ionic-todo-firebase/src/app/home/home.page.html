@@ -11,10 +11,21 @@
     The world is your oyster.
     <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
 
+    <input type="text" [(ngModel)]="newTask.name">
+
+    <button ion-button (click)="addTask(newTask)">
+      <ion-icon name="add"></ion-icon>    
+    </button>
+
     <ion-list>
       <ion-item *ngFor="let task of tasks | async">
         <input type="text" [(ngModel)]="task.name">
-        <button (click)="updateTask(task.key, task.name)">Update</button>
+        <button item-left ion-button (click)="updateTask(task, task.name)">
+          <ion-icon name="brush"></ion-icon>
+        </button>
+        <button item-left ion-button (click)="removeTask(task)">
+          <ion-icon name="remove"></ion-icon>
+        </button>
       </ion-item>
     </ion-list>
 

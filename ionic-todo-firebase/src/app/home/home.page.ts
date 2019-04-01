@@ -31,6 +31,7 @@ import { map } from 'rxjs/operators';
 export class HomePage {
   tasksRef: AngularFireList<any>;
   tasks: Observable<any[]>;
+  newTask = {name: ''};
 
   constructor(db: AngularFireDatabase) {
     this.tasksRef = db.list('tasks');
@@ -42,7 +43,16 @@ export class HomePage {
     );
   }
 
-  updateTask(key: string, name: string) {
-    this.tasksRef.update(key, {name: name});
+  addTask(newTask: any) {
+    this.tasksRef.push(newTask);
+    this.newTask = {name: ''};
+  }
+
+  updateTask(task: any, name: string) {
+    this.tasksRef.update(task.key, {name: name});
+  }
+
+  removeTask(task: any) {
+    this.tasksRef.remove(task.key);
   }
 }
