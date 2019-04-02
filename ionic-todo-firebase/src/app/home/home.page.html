@@ -13,19 +13,19 @@
 
     <input type="text" [(ngModel)]="newTask.name">
 
-    <button ion-button (click)="addTask(newTask)">
+    <ion-button (click)="addTask(newTask)">
       <ion-icon name="add"></ion-icon>    
-    </button>
+    </ion-button>
 
     <ion-list>
       <ion-item *ngFor="let task of tasks | async">
         <input type="text" [(ngModel)]="task.name">
-        <button item-left ion-button (click)="updateTask(task, task.name)">
+        <ion-button item-left ion-button (click)="updateTask(task, task.name)">
           <ion-icon name="brush"></ion-icon>
-        </button>
-        <button item-left ion-button (click)="removeTask(task)">
+        </ion-button>
+        <ion-button item-left ion-button (click)="removeTask(task)">
           <ion-icon name="remove"></ion-icon>
-        </button>
+        </ion-button>
       </ion-item>
     </ion-list>
 
