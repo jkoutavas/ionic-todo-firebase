@@ -34,4 +34,4 @@ firebase functions:config:set gmail.email="someone@gmail.com" gmail.password="em
 ```
 Note that `gmail.email` has to be a valid gmail email address and that `sendto.email` can be any email address you'd like the notification email sent to.
 
-Before you issue `firebase deploy --only functions` you'll need to do an `npm install nodemailer` from the `firebase-cloud-functions/functions` directory.
+Before you issue `firebase deploy --only functions` you'll need to do an `npm install nodemailer` from the `firebase-cloud-functions` directory.
