@@ -1,6 +1,6 @@
 # ionic-todo-firebase
 
-*README last updated April 1st, 2019*
+*README last updated April 3rd, 2019*
 
 ## Introduction
 
