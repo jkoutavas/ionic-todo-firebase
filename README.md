@@ -1,6 +1,6 @@
 # ionic-todo-firebase
 
-*README last updated March 31st, 2019*
+*README last updated April 3rd, 2019*
 
 ## Introduction
 
@@ -23,3 +23,15 @@ git rm --cached ionic-todo-firebase/src/environments/environment.ts
 git secret add ionic-todo-firebase/src/environments/environment.ts
 git secret hide
 ```
+
+## Bonus: a nodemailer cloud function example
+
+This repo also includes an example of how to send an email email notification when a new task has been created. See [firebase-cloud-functions/index.js]<./firebase-cloud-functions/index.js>
+
+You'll need to setup email from the `firebase` command line, as so:
+```
+firebase functions:config:set gmail.email="someone@gmail.com" gmail.password="email-password" sendto.email="someone@example.com"
+```
+Note that `gmail.email` has to be a valid gmail email address and that `sendto.email` can be any email address you'd like the notification email sent to.
+
+Before you issue `firebase deploy --only functions` you'll need to do an `npm install nodemailer` from the `firebase-cloud-functions/functions` directory.
