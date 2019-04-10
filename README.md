@@ -26,7 +26,7 @@ git secret hide
 
 ## Bonus: a nodemailer cloud function example
 
-This repo also includes an example of how to send an email email notification when a new task has been created. See [firebase-cloud-functions/index.js]<./firebase-cloud-functions/index.js>
+This repo also includes an example of how to send an email email notification when a new task has been created. See [firebase-cloud-functions/index.js](<./firebase-cloud-functions/index.js>)
 
 You'll need to setup email from the `firebase` command line, as so:
 ```
